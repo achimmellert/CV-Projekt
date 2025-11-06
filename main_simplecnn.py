@@ -12,7 +12,7 @@ import io
 
 app = FastAPI(title="Emotion Detection API")
 
-# Erlaube CORS für deine Domain
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Für Produktion: ["https://achimmellert.de"]
@@ -28,7 +28,7 @@ app.add_middleware(
 class CNN(nn.Module):
     def __init__(self, num_classes=7, dropout_b=0.2, dropout_fc=0.4):
         super().__init__()
-        # ... (dein CNN-Code unverändert) ...
+        
         # Block 1
         self.conv1 = nn.Conv2d(1, 64, kernel_size=3, padding=1)
         self.bn1 = nn.BatchNorm2d(64)
