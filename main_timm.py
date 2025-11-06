@@ -14,10 +14,10 @@ import timm
 
 app = FastAPI(title="Emotion Detection API")
 
-# Erlaube CORS für deine Domain (korrigiere den Leerzeichen-Fehler!)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://achimmellert.de"],  # ← Entferne die überflüssigen Leerzeichen!
+    allow_origins=["https://achimmellert.de"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,7 +39,7 @@ model.eval()
 print("✅ EfficientNet-B0 Modell erfolgreich geladen.")
 
 # ===========================
-# 2. Transform (WICHTIG: entspricht dem Training!)
+# 2. Transform 
 # ===========================
 
 # Diese Normalisierung muss EXAKT der vom Training entsprechen!
