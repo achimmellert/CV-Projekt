@@ -1,8 +1,8 @@
 # export_onnx.py
 import torch
-from SimpleCNN import CNN  # Ersetze 'your_module' mit dem tatsächlichen Modulnamen (z.B. 'main')
+from SimpleCNN import CNN  
 
-# Lade dein trainiertes Modell
+
 model = CNN(num_classes=7, dropout_b=0.2, dropout_fc=0.4)
 model.load_state_dict(torch.load("deploy1/best_simple_cnn_model.pth", map_location="cpu"))
 model.eval()
