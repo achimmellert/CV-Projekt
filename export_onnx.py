@@ -24,4 +24,4 @@ torch.onnx.export(
     }
 )
 
-print("✅ ONNX-Modell erfolgreich exportiert als 'emotion_model.onnx'")
+print("ONNX-Modell erfolgreich exportiert als 'emotion_model.onnx'")
