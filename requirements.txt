@@ -5,3 +5,5 @@ torchvision==0.18.1
 mediapipe==0.10.14
 Pillow
 numpy
+flet
+httpx
