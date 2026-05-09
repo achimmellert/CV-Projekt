@@ -1,4 +1,4 @@
-# 🎭 Emotion Recognition App
+# Emotion Recognition App
 
 Diese App nutzt ein CNN, um automatisch Emotionen in Gesichtern zu erkennen.
 
@@ -9,7 +9,7 @@ Diese App nutzt ein CNN, um automatisch Emotionen in Gesichtern zu erkennen.
 
 ---
 
-## 🧠 Modell-Architektur (CNN)
+## Modell-Architektur
 Das Herzstück ist ein **ResNet-basiertes CNN**, das speziell für 48x48 Graustufenbilder optimiert wurde:
 
 
@@ -23,7 +23,7 @@ Das Herzstück ist ein **ResNet-basiertes CNN**, das speziell für 48x48 Graustu
 
 ---
 
-## 🚀 Quickstart (Docker)
+## Quickstart
 
 **Voraussetzung:** Deine Modell-Datei liegt in `models/best_model.pth`.
 
